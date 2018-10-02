@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TypeScriptSamples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/angular-cli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/angularPlayground" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rxjs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rxjs-in-action" vcs="Git" />
+  </component>
+</project>
