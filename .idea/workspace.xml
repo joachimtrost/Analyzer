@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ad614e4-c03d-49ca-88f9-9bffe683435b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/antlr/handHistory.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jt/poker/filewatcher/FileWatcherReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grun.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/antlr4/Hello.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jt/poker/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jt/poker/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jt/poker/filewatcher/FileWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jt/poker/filewatcher/FileWatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/PokerBot-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/PokerBot-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/jt/poker/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jt/poker/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/jt/poker/filewatcher/FileWatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/jt/poker/filewatcher/FileWatcher.class" afterDir="false" />
@@ -92,6 +88,7 @@
         <counts>
           <entry key="g4" value="11" />
           <entry key="java" value="1288" />
+          <entry key="txt" value="44" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
@@ -99,20 +96,21 @@
         <counts>
           <entry key="ANTLR v4 grammar file" value="11" />
           <entry key="JAVA" value="1288" />
+          <entry key="PLAIN_TEXT" value="44" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="g4" value="1" />
-          <entry key="java" value="3" />
+          <entry key="java" value="4" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="ANTLR v4 grammar file" value="1" />
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="4" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -121,19 +119,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jt/poker/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/antlr/handHistory.g4">
+        <entry file="file://$PROJECT_DIR$/src/main/antlr4/handHistory.g4">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
@@ -193,7 +179,7 @@
         <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -304,31 +290,6 @@
               <item name="PokerBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analyzer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PokerBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokerBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokerBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="antlr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokerBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -384,7 +345,7 @@
       <workItem from="1538496878622" duration="7848000" />
       <workItem from="1538541253206" duration="10463000" />
       <workItem from="1538657811952" duration="1233000" />
-      <workItem from="1538659074415" duration="371000" />
+      <workItem from="1538659074415" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="mvn project setup">
       <created>1538497804647</created>
@@ -393,15 +354,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538497804647</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="intermediate state with first ANTL example">
+      <created>1538659696895</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538659696895</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21109000" />
+    <option name="totallyTimeSpent" value="22692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1719" height="932" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2675887" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -445,7 +412,8 @@
       <path value="$PROJECT_DIR$/rxjs-in-action" />
     </ignored-roots>
     <MESSAGE value="mvn project setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvn project setup" />
+    <MESSAGE value="intermediate state with first ANTL example" />
+    <option name="LAST_COMMIT_MESSAGE" value="intermediate state with first ANTL example" />
   </component>
   <component name="editorHistoryManager">
     <entry file="uml://MAVEN/org.jt.poker:PokerBot:1.0-SNAPSHOT">
@@ -517,7 +485,7 @@
     <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
@@ -538,12 +506,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr/handHistory.g4">
+    <entry file="file://$PROJECT_DIR$/src/main/antlr4/handHistory.g4">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/handHistoryLexer.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
