@@ -31,6 +31,7 @@ import static java.nio.file.Files.newByteChannel;
 import static java.nio.file.StandardOpenOption.READ;
 import static org.apache.commons.io.IOUtils.closeQuietly;
 
+
 /**
  * A non-blocking tail implementation allowing to read an arbitrary number of bytes from the end of a file
  * and follow changes to it.
@@ -39,7 +40,7 @@ import static org.apache.commons.io.IOUtils.closeQuietly;
  */
 public class FileWatcher implements Runnable {
     private static final int AWAIT_FILE_ROTATION_MILLIS = 1000;
-    private static final int TAIL_CHECK_INTERVAL_MILLIS = 500;
+    private static final int TAIL_CHECK_INTERVAL_MILLIS = 100;
 
     private final Logger LOGGER = Logger.getLogger(FileWatcher.class.getName());
 
@@ -48,14 +49,16 @@ public class FileWatcher implements Runnable {
     private final long bytesToTail;
 
     private boolean stopped = false;
+    private FileWatcherReader target;
 
     //    Tail(RemoteEndpoint remoteEndpoint, File file, long bytesToTail) {
-    public FileWatcher(File file, long bytesToTail) {
+    public FileWatcher(File file, long bytesToTail, FileWatcherReader target) {
         if (file == null) {
             throw new IllegalArgumentException("constructor parameter file must not be null");
         }
         this.bytesToTail = bytesToTail;
         this.file = file;
+        this.target = target;
     }
 
     @Override
@@ -104,21 +107,23 @@ public class FileWatcher implements Runnable {
 
                 readBuffer.flip();
 
-                LOGGER.info(String.format("next chars %s %d",readBuffer.toString(), read));
-                StringBuffer sb = new StringBuffer() ;
-                for(int i=0 ; i<(read) ; i++) {
-                    sb.append((char)(readBuffer.get())) ;
+                StringBuffer sb = new StringBuffer();
+                for (int i = 0; i < (read); i++) {
+                    sb.append((char) (readBuffer.get()));
 //                    sb.append(" ") ;
                 }
 
-                LOGGER.info(String.format("/%s/",sb.toString()));
+//                LOGGER.info(String.format("next chars /%s/", sb.toString()));
+//                LOGGER.info("before write");
+                target.write(sb.toString());
+//                LOGGER.info("after write");
                 readBuffer.clear();
             }
         } catch (IOException e) {
-            LOGGER.log(Level.SEVERE,"Unable to tail " + this.file.getAbsolutePath() + ".", e);
+            LOGGER.log(Level.SEVERE, "Unable to tail " + this.file.getAbsolutePath() + ".", e);
         } catch (InterruptedException e) {
             if (!this.stopped) {
-                LOGGER.log(Level.SEVERE,"Stopped tailing " + this.file.getAbsolutePath() + ", got interrupted.", e);
+                LOGGER.log(Level.SEVERE, "Stopped tailing " + this.file.getAbsolutePath() + ", got interrupted.", e);
             }
         } finally {
             closeQuietly(channel);
